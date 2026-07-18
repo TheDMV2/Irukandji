@@ -1,0 +1,8 @@
+name: Irukandji
+description: Image quality control and in-memory caching for Jellyfin
+version: 1.0.0
+minimumVersion: 10.11.0.0
+guid: f1e5c8d7-b9a2-4c3e-8f5d-2a1b7c9e3f6d
+author: TheDMV2
+overviewUrl: https://github.com/TheDMV2/Irukandji
+sourceUrl: https://github.com/TheDMV2/Irukandji

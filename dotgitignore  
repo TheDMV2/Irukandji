@@ -1,0 +1,27 @@
+## Rider IDE
+.idea/
+*.sln.iml
+
+## Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+bin/
+obj/
+
+## Build output
+*.nupkg
+*.snupkg
+*.dll
+*.exe
+*.pdb
+dist/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Dependencies
+node_modules/
