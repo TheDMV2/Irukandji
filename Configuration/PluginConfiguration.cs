@@ -1,6 +1,4 @@
-using Jellyfin.Data.Entities;
 using MediaBrowser.Common.Configuration;
-using System.Collections.Generic;
 
 namespace Irukandji.Configuration;
 

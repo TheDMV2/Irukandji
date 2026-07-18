@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace Irukandji.Middleware;
 
 /// <summary>
 /// Registers QualityRewriteMiddleware in the ASP.NET Core pipeline.
-/// Runs early, before the core ImageController parses the request.
+/// Intercepts lossy image requests (JPEG, WebP) to rewrite quality parameter.
 /// </summary>
 public class QualityRewriteStartupFilter : IStartupFilter
 {

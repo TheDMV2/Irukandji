@@ -2,15 +2,12 @@ using Irukandji.Configuration;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
 using MediaBrowser.Model.Plugins;
+using MediaBrowser.Model.Serialization;
 using System;
 using System.Collections.Generic;
 
 namespace Irukandji;
 
-/// <summary>
-/// Main plugin entry point. Registers with Jellyfin's plugin system.
-/// Handles configuration schema, manifest metadata, and service registration.
-/// </summary>
 public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
 {
     public override string Name => "Irukandji Image Optimizer";
@@ -28,7 +25,6 @@ public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
 
     public IEnumerable<PluginPageInfo> GetPages()
     {
-        // Config page served as embedded web component
         yield return new PluginPageInfo
         {
             Name = "Irukandji Settings",
